@@ -3,7 +3,7 @@
 ### CocoaPods
 [CocoaPods](http://cocoapods.org) 是向项目添加OdinAnalysis的推荐方法。
 
-1. 将OdinShare的pod条目添加到您的Podfile文件中
+1. 将OdinAnalysis的pod条目添加到您的Podfile文件中
 
 ###### 集成
     pod 'OdinAnalysis'
