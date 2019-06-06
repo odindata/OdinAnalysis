@@ -16,7 +16,7 @@
  * @param   appkey      APP注册时获取唯一标识符
  * @param   channel     当前使用渠道，设置nil默认APP Store
  */
-+ (void)initSDKWithAPPKey:(NSString *_Nonnull)appkey Channel:(NSString *_Nonnull)channel;
++ (void)initSDKWithAPPKey:(NSString *_Nonnull)appkey Channel:(NSString *_Nullable)channel;
 
 /**
  * 注册事件统计
