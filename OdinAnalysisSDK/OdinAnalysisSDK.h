@@ -16,7 +16,7 @@
  * @param   appkey      APP注册时获取唯一标识符
  * @param   channel     当前使用渠道，设置nil默认APP Store
  */
-+ (void)initSDKWithAPPKey:(NSString *_Nonnull)appkey Channel:(NSString *_Nullable)channel;
++ (void)initSDKWithAPPKey:(NSString *_Nonnull)appkey Channel:(nullable NSString *)channel;
 
 /**
  * 注册事件统计
@@ -42,6 +42,12 @@
  * @param   status           登录状态;1成功0失败。
  */
 + (void)endEventLogin:(NSString *_Nonnull)userId status:(NSInteger)status;
+
+
+///**
+// 登出事件(配合登录使用)
+// */
+//+ (void)logout;
 
 /**
  * 支付事件
@@ -82,7 +88,7 @@
 
 
 /**
- 异常事件统计
+ 异常事件统计（用户反馈）
  @param title 异常标题
  @param context 异常内容
  */
