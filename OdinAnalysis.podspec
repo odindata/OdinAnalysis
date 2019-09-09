@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "OdinAnalysis"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "奥丁数据统计"
 
   # This description is used to generate tags and improve search results.
