@@ -10,13 +10,13 @@
     
 2. 通过运行“pod Install”安装
 
-3. 把OdinAnalysis放在你需要的地方`#import <OdinAnalysisSDK.h>`.
+3. 把OdinAnalysis放在你需要的地方`#import <OdinAnalysisSDK.h>`
 # 使用
 在didFinishLaunchingWithOptions中设置各平台的key和secret以及回调地址
 ```objective-c
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	 [OdinAnalysisSDK initSDKWithAPPKey:@"OdnKey" Channel:@"AppStore"];
+	 [OdinAnalysisSDK initSDKWithAPPKey:@"OdinKey" Channel:@"AppStore"];
 }
 ```
 ###### 事件统计
