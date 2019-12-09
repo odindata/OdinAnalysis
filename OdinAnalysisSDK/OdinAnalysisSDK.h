@@ -44,11 +44,6 @@
 + (void)endEventLogin:(NSString *_Nonnull)userId status:(NSInteger)status;
 
 
-///**
-// 登出事件(配合登录使用)
-// */
-//+ (void)logout;
-
 /**
  * 支付事件
  * @param   payAmount       支付金额
@@ -62,30 +57,6 @@
  * @param   eventId         事件名称
  */
 + (void)eventOperation:(NSString *_Nonnull)eventId;
-
-/**
- * 自定义事件
- * @param   eventId       事件eventId 说明：不超过20位，必须小写英文字母加下划线，英文字母结尾，每个事件名称唯一
- * @param   attributes      自定义属性{"key1":"value1","key2":"value2"}
- */
-+ (void)eventCustom:(NSString *_Nonnull)eventId attributes:(NSDictionary *_Nonnull)attributes;
-
-/**
- 自定定义事件时长统计开始
-
- @param eventId 自定义事件名称或者ID
- @param attributes 为自定义事件的属性和取值(@"key1":@"value1",@"key1":@"value1")
- */
-+ (void)beginEventCustom:(NSString *_Nonnull)eventId attributes:(NSDictionary *_Nonnull)attributes;
-
-/**
- 自定定义事件时长统计结束
-
- @param eventId 自定义事件名称或者ID
- @param attributes 为自定义事件的属性和取值(@"key1":@"value1",@"key1":@"value1")
- */
-+ (void)endEventCustom:(NSString *_Nullable)eventId attributes:(NSDictionary *_Nonnull)attributes;
-
 
 /**
  异常事件统计（用户反馈）
@@ -107,6 +78,15 @@
  @param pageName 结束页面的名称
  */
 + (void)pageEnd:(NSString *_Nonnull)pageName;
+
+
+/**
+ 泛事件
+ 
+ @param event_id 事件id
+ @param param 事件参数
+ */
++ (void)trackEvent:(NSString *_Nonnull)event_id param:(NSDictionary *_Nonnull)param;
 
 /**
  * 是否支持打印log信息
