@@ -12,7 +12,10 @@
 
 3. 把OdinAnalysis放在你需要的地方`#import <OdinAnalysisSDK.h>`
 # 使用
-在didFinishLaunchingWithOptions中设置各平台的key和secret以及回调地址
+在项目工程的Info.plist 中增加OdinAppKey 和 OdinAppSecret 两个字段
+填入平台获取的odinKey和odinSecret的值
+
+在didFinishLaunchingWithOptions中设置各平台的key
 ```objective-c
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
